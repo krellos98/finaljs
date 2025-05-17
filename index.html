@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Convertidor CLP</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <h1>Convertidor de Pesos Chilenos</h1>
+
+  <div class="container">
+    <h2>Ingrese Monto en CLP</h2>
+    <input type="number" id="valorCLP" placeholder="Ej: 10000">
+    
+    <label for="selectorMoneda">Seleccione una moneda extranjera:</label>
+    <select id="selectorMoneda">
+      <option value="">-- Seleccione --</option>
+    </select>
+
+    <button id="btnConvertir">Convertir</button>
+
+    <p id="respuestaConversion"></p>
+    <canvas id="chartMoneda" width="400" height="400"></canvas>
+  </div>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
